@@ -33,8 +33,7 @@ public class RespostaAlunoModel {
 
     public RespostaAlunoModel(){}
 
-    public RespostaAlunoModel(Long idRespostaAluno, Date dataEnvio, ExercicioModel exercicio, UsuarioModel usuario) {
-        this.idRespostaAluno = idRespostaAluno;
+    public RespostaAlunoModel( Date dataEnvio, ExercicioModel exercicio, UsuarioModel usuario) {
         this.dataEnvio = dataEnvio;
         this.exercicio = exercicio;
         this.usuario = usuario;

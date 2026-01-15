@@ -50,8 +50,7 @@ public class ExercicioModel {
     public ExercicioModel() {
     }
 
-    public ExercicioModel(Long idExercicio, String enunciado, Double tolerancia, Double pontuacaoMaxima, Set<TipoExercicio> tipoExercicio, Set<CriterioCorrecao> criterioCorrecao, ListaExerciciosModel lista) {
-        this.idExercicio = idExercicio;
+    public ExercicioModel( String enunciado, Double tolerancia, Double pontuacaoMaxima, Set<TipoExercicio> tipoExercicio, Set<CriterioCorrecao> criterioCorrecao, ListaExerciciosModel lista) {
         this.enunciado = enunciado;
         this.tolerancia = tolerancia;
         this.pontuacaoMaxima = pontuacaoMaxima;

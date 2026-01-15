@@ -33,8 +33,7 @@ public class VetorEsperadoModel {
     public VetorEsperadoModel() {
     }
 
-    public VetorEsperadoModel(Long idVetorEsperado, String ordem, Map<String, Object> componente, RespostaEsperadaModel respostaEsperada) {
-        this.idVetorEsperado = idVetorEsperado;
+    public VetorEsperadoModel( String ordem, Map<String, Object> componente, RespostaEsperadaModel respostaEsperada) {
         this.ordem = ordem;
         this.componente = componente;
         this.respostaEsperada = respostaEsperada;

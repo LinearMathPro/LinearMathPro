@@ -27,8 +27,7 @@ public class ResultadoCorrecaoModel {
 
     public ResultadoCorrecaoModel(){}
 
-    public ResultadoCorrecaoModel(Long idResultadoCorrecao, String feedbackTexto, Double nota, Status status, RespostaAlunoModel respostaAluno) {
-        this.idResultadoCorrecao = idResultadoCorrecao;
+    public ResultadoCorrecaoModel(String feedbackTexto, Double nota, Status status, RespostaAlunoModel respostaAluno) {
         this.feedbackTexto = feedbackTexto;
         this.nota = nota;
         this.status = status;

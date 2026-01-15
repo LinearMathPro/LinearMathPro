@@ -37,8 +37,7 @@ public class ListaExerciciosModel {
     public ListaExerciciosModel() {
     }
 
-    public ListaExerciciosModel(Long idListaExercicios, String nomeListaExercicios, Date data_criacao, SalaModel sala, UsuarioModel usuario) {
-        this.idListaExercicios = idListaExercicios;
+    public ListaExerciciosModel(String nomeListaExercicios, Date data_criacao, SalaModel sala, UsuarioModel usuario) {
         this.nomeListaExercicios = nomeListaExercicios;
         this.data_criacao = data_criacao;
         this.sala = sala;

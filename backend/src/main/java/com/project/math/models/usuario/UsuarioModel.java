@@ -18,8 +18,7 @@ public class UsuarioModel {
     private String senha;
 
     public UsuarioModel(){};
-    public UsuarioModel(Long idUsuario,String nomeUsuario, String email,String senha){
-        this.idUsuario = idUsuario;
+    public UsuarioModel(String nomeUsuario, String email,String senha){
         this.nomeUsuario = nomeUsuario;
         this.email = email;
         this.senha = senha;

@@ -21,8 +21,8 @@ public class SalaModel {
     public SalaModel() {
     }
 
-    public SalaModel(Long idSala, String nomeSala, int codigoSala, UsuarioModel usuario) {
-        this.idSala = idSala;
+    public SalaModel( String nomeSala, int codigoSala, UsuarioModel usuario) {
+
         NomeSala = nomeSala;
         this.codigoSala = codigoSala;
         this.usuario = usuario;

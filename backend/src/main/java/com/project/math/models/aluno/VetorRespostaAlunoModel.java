@@ -31,8 +31,7 @@ public class VetorRespostaAlunoModel {
 
     public VetorRespostaAlunoModel(){}
 
-    public VetorRespostaAlunoModel(Long idVetorRespostaAluno, String ordem, Map<String, Object> componente, RespostaAlunoModel respostaAluno) {
-        this.idVetorRespostaAluno = idVetorRespostaAluno;
+    public VetorRespostaAlunoModel(String ordem, Map<String, Object> componente, RespostaAlunoModel respostaAluno) {
         this.ordem = ordem;
         this.componente = componente;
         this.respostaAluno = respostaAluno;

@@ -27,8 +27,7 @@ public class RespostaEsperadaModel {
     public RespostaEsperadaModel() {
     }
 
-    public RespostaEsperadaModel(Long idRespostaEsperada, int dimensao, TipoObjeto tipoObjeto, ExercicioModel exercicio) {
-        this.idRespostaEsperada = idRespostaEsperada;
+    public RespostaEsperadaModel( int dimensao, TipoObjeto tipoObjeto, ExercicioModel exercicio) {
         this.dimensao = dimensao;
         this.tipoObjeto = tipoObjeto;
         this.exercicio = exercicio;

@@ -27,8 +27,7 @@ public class AnaliseCorrecaoModel {
 
     public AnaliseCorrecaoModel(){}
 
-    public AnaliseCorrecaoModel(Long idAnaliseCorrecao, boolean pertenceSpan, boolean dependenteLinear, boolean subespacosIguais, Double erroResidual, int dimensaoEncontrada, RespostaAlunoModel respostaAluno) {
-        this.idAnaliseCorrecao = idAnaliseCorrecao;
+    public AnaliseCorrecaoModel( boolean pertenceSpan, boolean dependenteLinear, boolean subespacosIguais, Double erroResidual, int dimensaoEncontrada, RespostaAlunoModel respostaAluno) {
         this.pertenceSpan = pertenceSpan;
         this.dependenteLinear = dependenteLinear;
         this.subespacosIguais = subespacosIguais;
