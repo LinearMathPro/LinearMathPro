@@ -11,7 +11,7 @@ import lombok.Getter;
 public class UsuarioRoleModel {
 
     @EmbeddedId
-    private UsuarioRoleId id;
+    private UsuarioRoleId id = new UsuarioRoleId();
 
     @ManyToOne
     @MapsId("idUsuario")
@@ -23,12 +23,9 @@ public class UsuarioRoleModel {
     @JoinColumn(name = "id_role")
     private RoleModel role;
 
-    public UsuarioRoleModel() {
-    }
-
-    public UsuarioRoleModel(UsuarioRoleId id, UsuarioModel usuario, RoleModel role) {
-        this.id = id;
+    public UsuarioRoleModel(UsuarioModel usuario, RoleModel role) {
         this.usuario = usuario;
         this.role = role;
     }
+    public UsuarioRoleModel(){}
 }

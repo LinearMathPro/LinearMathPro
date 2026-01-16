@@ -7,14 +7,15 @@ import lombok.Setter;
 
 @Entity
 @Table (name = "usuario")
-@Getter
-@Setter
-@Data
+
 public class UsuarioModel {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Setter @Getter
     private Long idUsuario;
+    @Setter @Getter
     private String nomeUsuario;
+    @Setter @Getter
     private String email;
+    @Setter @Getter
     private String senha;
 
     public UsuarioModel(){};
@@ -23,5 +24,6 @@ public class UsuarioModel {
         this.email = email;
         this.senha = senha;
     }
+
 
 }

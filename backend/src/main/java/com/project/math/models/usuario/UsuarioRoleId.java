@@ -1,12 +1,16 @@
 package com.project.math.models.usuario;
 
 import jakarta.persistence.Embeddable;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 @Embeddable
 // Classe que representa a PK da UsuarioRole
+@Getter
+@Setter
 public class UsuarioRoleId implements Serializable {
 
     private Long idUsuario;
