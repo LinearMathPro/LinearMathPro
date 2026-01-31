@@ -9,4 +9,5 @@ import java.util.Optional;
 
 @Repository
 public interface UsuarioRoleRepository extends JpaRepository<UsuarioRoleModel, Long> {
+    Optional<UsuarioRoleModel> findByUsuario_IdUsuario(Long idUsuario);
 }
