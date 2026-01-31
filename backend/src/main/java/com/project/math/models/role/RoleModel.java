@@ -7,9 +7,6 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "role")
-@Getter
-@Setter
-@Data
 public class RoleModel {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idRole;
@@ -21,5 +18,13 @@ public class RoleModel {
     public RoleModel(Long idRole, TipoRole nomeRole) {
         this.idRole = idRole;
         this.nomeRole = nomeRole;
+    }
+
+    public Long getIdRole() {
+        return idRole;
+    }
+
+    public TipoRole getNomeRole() {
+        return nomeRole;
     }
 }

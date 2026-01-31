@@ -1,6 +1,6 @@
 package com.project.math.models.role;
 
 public enum TipoRole {
-    PROFESSOR,
-    ALUNO
+    ROLE_PROFESSOR,
+    ROLE_ALUNO
 }

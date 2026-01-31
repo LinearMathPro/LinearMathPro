@@ -7,7 +7,6 @@ import lombok.Getter;
 
 @Entity
 @Table(name = "usuario_role")
-@Getter
 public class UsuarioRoleModel {
 
     @EmbeddedId
@@ -28,4 +27,16 @@ public class UsuarioRoleModel {
         this.role = role;
     }
     public UsuarioRoleModel(){}
+
+    public UsuarioRoleId getId() {
+        return id;
+    }
+
+    public UsuarioModel getUsuario() {
+        return usuario;
+    }
+
+    public RoleModel getRole() {
+        return role;
+    }
 }

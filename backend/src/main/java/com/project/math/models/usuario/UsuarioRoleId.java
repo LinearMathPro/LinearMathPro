@@ -9,8 +9,6 @@ import java.util.Objects;
 
 @Embeddable
 // Classe que representa a PK da UsuarioRole
-@Getter
-@Setter
 public class UsuarioRoleId implements Serializable {
 
     private Long idUsuario;
@@ -28,5 +26,13 @@ public class UsuarioRoleId implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(idUsuario, idRole);
+    }
+
+    public Long getIdUsuario() {
+        return idUsuario;
+    }
+
+    public Long getIdRole() {
+        return idRole;
     }
 }
